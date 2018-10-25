@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  docker-go:
+    image: docker-go
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+        - 9000:9000
